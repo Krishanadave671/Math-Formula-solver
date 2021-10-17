@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_homepage">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:text="Sum of series in A.P."
+           android:textAlignment="center"
+           android:textSize="40sp"
+           android:fontFamily="@font/muli_black"
+           android:textColor="@color/black"
+           android:padding="20dp"/>
+
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="32dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="32dp"
+           android:hint="Enter the value of first term"
+           app:boxStrokeColor="@color/black"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/editext_firsterm"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"/>
+
+
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="32dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="32dp"
+           android:hint="Enter the number of terms"
+           app:boxStrokeColor="@color/black"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+           >
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/editext_numbern"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"/>
+
+
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="32dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="32dp"
+           android:hint="Enter the common difference between terms"
+           app:boxStrokeColor="@color/black"
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:id="@+id/edittext_commond"
+               android:layout_height="wrap_content"
+               android:inputType="number"/>
+
+
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <Button
+           android:id="@+id/button_calculate"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:layout_marginStart="70dp"
+           android:layout_marginEnd="70dp"
+           android:text="Calculate"/>
+
+       <TextView
+           android:id="@+id/textView_result"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="30dp"
+           android:layout_margin="30dp"
+           android:textSize="40sp"
+           android:textColor="@color/black"
+           android:textAlignment="center"
+           android:background="#ffd7de"/>
+
+   </LinearLayout>
+</ScrollView>
